@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Switch,Route} from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar'
@@ -16,8 +15,8 @@ class App extends Component {
       <React.Fragment>
           <Navbar />
           <Switch>
-              <Route exact path="/details" Component={Details}/>
-              <Route exact path="/cart" Component={Cart}/>
+              <Route  path="/details" Component={Details}/>
+              <Route  path="/cart" Component={Cart}/>
               <Route  Component={Default}/>
               <Route exact path="/" Component={ProductList}/>
           </Switch>
